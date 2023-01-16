@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Criar evento</title>
+</head>
+<body>
+
+    <nav>
+        <div id=" title">
+            <h1> BKM </h1>
+            <h1> EVENTOS </h1>
+        </div>
+
+        <h2> EDITE SEU EVENTO </h2>
+        
+        <ul>
+            <a href="#">
+                <li>Início</li>
+            </a>
+
+            <a href="#">
+                <li>Meus dados </li>
+            </a>
+
+            <a href="#">
+                <li>Sair</li>
+            </a>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Crie seu evento!</h1>
+                    </div>
+                    
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="idn">Nome do Evento:</label>
+                        <input type="text" name="nome" id="idn" placeholder="nome do evento" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idd">Data do evento:</label>
+                        <input type="date" name="dia" id="idd" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <label for="idhi">Horário de ínicio:</label>
+                        <input type="time" name="inicio" id="idhi" required>
+                    </div>
+
+                </div>
+
+                    <div class="input-box">
+                        <label for="idhf">Horário de término:</label>
+                        <input type="time" name="final" id="idhf" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idr">Rua:</label>
+                        <input type="text" name="rua" id="idr" placeholder="nome da rua" required> 
+                    </div> 
+
+                    <div class="input-box">
+                        <label for="idb">Bairro:</label>
+                        <input type="text" name="bairro" id="idb" placeholder="nome do bairro" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="idnr">Número:</label>
+                        <input type="text" name="numero" id="idnr" placeholder="número do local" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idn">CEP:</label>
+                        <input type="text" name="cep" id="idc" placeholder="_____-___" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idd">Cidade do Evento:</label>
+                        <input type="text" name="cidade" id="idcd" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="idhi">Descrição do Evento:</label>
+                        <input type="text" name="descricao" id="iddesc" placeholder="Descreva aqui seu evento, cronograma, atrações, etc." class="desc" required >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="idhf">Tipo de Ingresso:</label>
+                        <input type="text" name="ingresso" id="idig" required>
+                    </div>
+
+                    <div class="save-button">
+                    <button><a href="#"> Salvar e Cadastrar Evento </a> </button>
+                </div>
+
+                    
+
+                </div>
+                   
+                   <form action="">
+                    <div class="input-group">
+                    <div class="input-box">
+                        <label for="name">Banner de Divulgação</label>
+                        <div class="input-file-upload">
+                            <div class="upload-btn">
+                                <button class="btn">
+                                    Selecionar o arquivo
+                                </button>
+                                <input type="file" id="upfile" onchange="readURL(this); ">
+                            </div>
+                            <img class="upload_img" id="file_upload">
+                        </div>
+                        <!-- <a href="">Enviar</a> -->
+                    </div>
+                </div>
+            
+                </form>
+            
+                <script src="app.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+                
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
